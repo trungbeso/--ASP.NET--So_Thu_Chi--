@@ -22,3 +22,38 @@ body {
 .e-bigger {
     font-size: x-large;
 }
+
+.radio-button-toggle-group .radio-button-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio-button-toggle-group label.btn:first-of-type{
+    border-radius: 5px 0 0 5px;
+    border-right: none !important;
+}
+
+.radio-button-toggle-group input.radio-button-input:checked + label.btn:first-of-type {
+    color: #000000;
+    font-weight: bold;
+    background-color: #fade34; 
+    border-color: #fade34;
+}
+
+.radio-button-toggle-group label.btn:last-child {
+   border-radius: 0 5px 5px 0;
+    border-left: none !important;
+}
+
+.radio-button-toggle-group input.radio-button-input:checked + label.btn:last-of-type {
+    color: #fff;
+    font-weight: bold;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.widget {
+    border-radius: 1rem;
+    background-color: #1a222b;
+}

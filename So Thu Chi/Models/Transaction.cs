@@ -7,7 +7,6 @@ namespace So_Thu_Chi.Models
     {
         [Key]
         public int TransactionId { get; set; }
-
         
         public int CategoryId { get; set; }
 
