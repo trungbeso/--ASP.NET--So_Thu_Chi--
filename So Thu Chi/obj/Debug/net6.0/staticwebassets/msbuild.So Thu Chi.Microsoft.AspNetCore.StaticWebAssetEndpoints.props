@@ -4,7 +4,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1058"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jcdP4fXBU3BEJVG8FyCnzBdVSFsezHX8OTu4pi5JkeA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 04:21:29 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2768"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002BidgZgn9TW48tKW3lDmLmTr4JwG1s3303N5do1Wz/U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 08:14:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/So Thu Chi/favicon.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</AssetFile>
@@ -364,7 +364,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\So Thu Chi.bundle.scp.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1423"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cLV\u002BjcHHiDi78ywxnoYLXVW6l90i4NHYHoDal3PIHiA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 04:35:36 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LCeHVFWmoBOVNn\u002BXzm9Zppaxe9ZbyRJKvuUNsOVItRs=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 05:12:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

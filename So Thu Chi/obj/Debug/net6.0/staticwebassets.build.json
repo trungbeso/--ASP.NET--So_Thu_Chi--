@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/zslN/ELjwl8bVydGBOXGpDYJcLup0eRQKZ/DCJ/vic=",
+  "Hash": "Rihzq1TEb2sHqXwvhgrGjqotj9Bbo7uAKlohCrPBNDE=",
   "Source": "So Thu Chi",
   "BasePath": "_content/So Thu Chi",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "w42n4z3vfo",
-      "Integrity": "cLV+jcHHiDi78ywxnoYLXVW6l90i4NHYHoDal3PIHiA=",
+      "Fingerprint": "wpz8i84z5v",
+      "Integrity": "LCeHVFWmoBOVNn+Xzm9Zppaxe9ZbyRJKvuUNsOVItRs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\FULL-STACK_PROJECT\\expense_tracker\\expense_tracker\\So Thu Chi\\obj\\Debug\\net6.0\\scopedcss\\bundle\\So Thu Chi.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "w42n4z3vfo",
-      "Integrity": "cLV+jcHHiDi78ywxnoYLXVW6l90i4NHYHoDal3PIHiA=",
+      "Fingerprint": "wpz8i84z5v",
+      "Integrity": "LCeHVFWmoBOVNn+Xzm9Zppaxe9ZbyRJKvuUNsOVItRs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\FULL-STACK_PROJECT\\expense_tracker\\expense_tracker\\So Thu Chi\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\So Thu Chi.bundle.scp.css"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d4bt2e3uya",
-      "Integrity": "jcdP4fXBU3BEJVG8FyCnzBdVSFsezHX8OTu4pi5JkeA=",
+      "Fingerprint": "l4p1epxsom",
+      "Integrity": "i+idgZgn9TW48tKW3lDmLmTr4JwG1s3303N5do1Wz/U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1331,7 +1331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1058"
+          "Value": "2768"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jcdP4fXBU3BEJVG8FyCnzBdVSFsezHX8OTu4pi5JkeA=\""
+          "Value": "\"i+idgZgn9TW48tKW3lDmLmTr4JwG1s3303N5do1Wz/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 04:21:29 GMT"
+          "Value": "Sat, 19 Apr 2025 08:14:48 GMT"
         }
       ],
       "EndpointProperties": []
@@ -3011,7 +3011,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1423"
+          "Value": "1127"
         },
         {
           "Name": "Content-Type",
@@ -3019,11 +3019,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cLV+jcHHiDi78ywxnoYLXVW6l90i4NHYHoDal3PIHiA=\""
+          "Value": "\"LCeHVFWmoBOVNn+Xzm9Zppaxe9ZbyRJKvuUNsOVItRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 04:35:36 GMT"
+          "Value": "Sat, 19 Apr 2025 05:12:42 GMT"
         }
       ],
       "EndpointProperties": []
@@ -3039,7 +3039,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1423"
+          "Value": "1127"
         },
         {
           "Name": "Content-Type",
@@ -3047,11 +3047,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cLV+jcHHiDi78ywxnoYLXVW6l90i4NHYHoDal3PIHiA=\""
+          "Value": "\"LCeHVFWmoBOVNn+Xzm9Zppaxe9ZbyRJKvuUNsOVItRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 04:35:36 GMT"
+          "Value": "Sat, 19 Apr 2025 05:12:42 GMT"
         }
       ],
       "EndpointProperties": []
