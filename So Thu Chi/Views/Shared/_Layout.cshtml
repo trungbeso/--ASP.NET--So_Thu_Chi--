@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - So_Thu_Chi</title>
+    <title>Sổ Thu Chi</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     @* <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/29.1.33/material.css" /> *@
     <link href="https://cdn.syncfusion.com/ej2/29.1.33/bootstrap5-dark.css" rel="stylesheet" />
@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/So_Thu_Chi.styles.css" asp-append-version="true" />
-    <script src="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2.min.js"></script>
 </head>
 <body class="e-bigger">
     <header>
@@ -39,6 +38,29 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <main role="main" class="pb-3">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="d-flex flex-column mb-5">
+                            <div class="d-flex mb-1">
+                                <div class="flex-grow-1">
+                                    <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                                </div>
+                                    <div>
+                                        @if (ViewData["PageActionText"] != null)
+                                        {
+                                        <a href="@ViewData["PageActionUrl"]" class="btn btn-success">
+                                            @ViewData["PageActionText"]
+                                        </a>
+                                        }
+                                    </div>
+                            </div>
+                            @*breadcrum*@
+                            <ejs-breadcrumb id="breadcrumbs" separatorTemplate="@Html.Raw("<span class='fa-solid fa-angle-right'></span>")">
+                                
+                            </ejs-breadcrumb>
+                        </div>
+                    </div>
+                </div>
                 @RenderBody()
             </main>
         </div>
@@ -49,7 +71,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2.min.js"></script>
     <ejs-scripts></ejs-scripts>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

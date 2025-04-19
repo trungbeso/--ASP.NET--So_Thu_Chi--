@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\FULL-STACK_PROJECT\\expense_tracker\\expense_tracker\\So Thu Chi\\wwwroot\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\FULL-STACK_PROJECT\\expense_tracker\\expense_tracker\\So Thu Chi\\wwwroot\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon-32x32.png"
+    },
+    {
       "Id": "D:\\FULL-STACK_PROJECT\\expense_tracker\\expense_tracker\\So Thu Chi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -28,6 +28,38 @@ body {
     font-size: x-large;
 }
 
+/* Breadcrumb */
+.e-breadcrumb a, .e-breadcrumb a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* delete modal */
+#deleteConfirmModal .modal-content {
+    background-color: #1a222b; 
+    color: #fff; 
+    border: 1px solid #333; 
+}
+
+#deleteConfirmModal .modal-header {
+    background-color: #222b33; 
+    color: #fff; 
+    border-bottom-color: #333; 
+}
+
+#deleteConfirmModal .modal-title {
+    color: #fff;
+}
+
+#deleteConfirmModal .btn-close {
+    filter: invert(1); /* Đảo ngược màu để chuyển từ đen sang trắng */
+}
+
+
+#deleteConfirmModal .modal-footer {
+    border-top-color: #333;
+}
+
 /* Button */
 .btn:focus, .btn:active {
     outline: none !important;

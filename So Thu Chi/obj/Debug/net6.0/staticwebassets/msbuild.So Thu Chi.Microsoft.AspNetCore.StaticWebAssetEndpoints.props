@@ -4,13 +4,25 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2768"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022i\u002BidgZgn9TW48tKW3lDmLmTr4JwG1s3303N5do1Wz/U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 08:14:48 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3497"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225gT1oWPmn55pTN\u002BRXcB5m9laEKRCcbfQFOeg/wJ33kY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 08:51:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/So Thu Chi/favicon-16x16.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon-16x16.png))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"494"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022DMj2wx14pebcDF2Tf0zyySMlIT29iIRZQu3cL3lzu9s=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 02:07:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/So Thu Chi/favicon-32x32.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon-32x32.png))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1079"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00228DjibZ/iNIUugp/LgmBR3Y2vVtohFqXA4kn2C4GX7T0=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 02:07:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/So Thu Chi/favicon.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Apr 2025 14:53:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15406"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u00223oH4KDb5zw01CHSczxvPrdTDlMIMlbqJsTdgcO9\u002BgCU=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 02:07:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/So Thu Chi/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))</AssetFile>

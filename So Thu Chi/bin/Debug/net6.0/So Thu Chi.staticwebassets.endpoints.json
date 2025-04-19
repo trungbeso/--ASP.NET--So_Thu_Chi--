@@ -40,7 +40,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2768"
+          "Value": "3497"
         },
         {
           "Name": "Content-Type",
@@ -48,11 +48,67 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"i+idgZgn9TW48tKW3lDmLmTr4JwG1s3303N5do1Wz/U=\""
+          "Value": "\"5gT1oWPmn55pTN+RXcB5m9laEKRCcbfQFOeg/wJ33kY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 08:14:48 GMT"
+          "Value": "Sat, 19 Apr 2025 08:51:51 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "favicon-16x16.png",
+      "AssetFile": "favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "494"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DMj2wx14pebcDF2Tf0zyySMlIT29iIRZQu3cL3lzu9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 02:07:44 GMT"
+        }
+      ],
+      "EndpointProperties": []
+    },
+    {
+      "Route": "favicon-32x32.png",
+      "AssetFile": "favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8DjibZ/iNIUugp/LgmBR3Y2vVtohFqXA4kn2C4GX7T0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 02:07:44 GMT"
         }
       ],
       "EndpointProperties": []
@@ -68,7 +124,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "15406"
         },
         {
           "Name": "Content-Type",
@@ -76,11 +132,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"3oH4KDb5zw01CHSczxvPrdTDlMIMlbqJsTdgcO9+gCU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Apr 2025 14:53:31 GMT"
+          "Value": "Sat, 19 Apr 2025 02:07:44 GMT"
         }
       ],
       "EndpointProperties": []
