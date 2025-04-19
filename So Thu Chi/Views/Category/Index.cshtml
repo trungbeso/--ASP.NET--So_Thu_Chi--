@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<So_Thu_Chi.Models.Category>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Danh Mục";
+    ViewData["PageActionText"] = "+";
+    ViewData["PageActionUrl"] = "/Category/AddOrEdit";
 }
 
 
@@ -25,6 +27,24 @@
     </div>
 </div>
 
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteConfirmModalLabel">Xác nhận xóa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa bản ghi này không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script id="typeColumnTemplate" type="text/x-template">
     ${if(Type=="Income")}
    <span class="badge bg-success">${Type}</span>
@@ -36,7 +56,98 @@
 <script id="actionColumnTemplate" type="text/x-template">
     <div class="d-flex flex-row justify-content-start">
         <a class="btn btm-sm no-a-decoration" href="/Category/AddOrEdit/${CategoryId}">
-        <i class="fa-solid fa-pencil fa-lg"></i>
+            <i class="fa-solid fa-pencil fa-lg"></i>
         </a>
+        <form action="/Category/Delete/${CategoryId}" method="post" class="delete-form"> 
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-sm btn-link no-a-decoration delete-button">
+                <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+            </button>
+        </form>
     </div>
 </script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        // Biến để lưu trữ form delete cần submit
+        let formToSubmit = null;
+
+        // Lấy tham chiếu đến nút "Xóa" trong modal và modal element
+        const confirmDeleteButton = document.getElementById('confirmDeleteButton');
+        const deleteConfirmModalElement = document.getElementById('deleteConfirmModal');
+
+        // Tạo instance Bootstrap modal
+        // Đảm bảo thư viện Bootstrap JS đã được tải trước đoạn mã này
+        const deleteConfirmModal = new bootstrap.Modal(deleteConfirmModalElement);
+
+        // Lấy tham chiếu đến instance Grid của Syncfusion
+        // Đảm bảo thư viện Syncfusion EJ2 JS đã được tải và Grid đã được khởi tạo
+        var grid = document.getElementById('categories').ej2_instances[0];
+
+        // --- Hàm để đính kèm sự kiện click vào các nút delete ---
+        function attachDeleteButtonListeners() {
+            // Tìm tất cả các nút có class 'delete-button' trong phần thân grid
+            // Selector '.e-content' nhắm vào khu vực nội dung có thể cuộn của Grid.
+            // Nếu Grid không đủ cao để cuộn, các nút có thể nằm trực tiếp trong .e-grid tbody.
+            // Selector '.e-grid tbody .delete-button' có thể an toàn hơn.
+            const deleteButtons = grid.element.querySelectorAll('.e-grid tbody .delete-button'); 
+
+            deleteButtons.forEach(button => {
+                 // Gỡ bỏ bất kỳ trình nghe sự kiện nào đã được đính kèm trước đó
+                 // Điều này giúp tránh đính kèm trùng lặp nếu dataBound fire nhiều lần
+                 // (Mặc dù .removeEventListener cần tham chiếu đến hàm listener cụ thể,
+                 // nhưng với trường hợp đơn giản này và việc kiểm tra ở dưới, cách này cũng có thể tạm được,
+                 // cách tốt nhất là lưu trữ hàm listener và gỡ bỏ nó)
+
+                // Đính kèm trình nghe sự kiện click
+                button.addEventListener('click', function(event) {
+                    // Ngăn form submit mặc định
+                    event.preventDefault();
+
+                    // Lưu lại form chứa nút delete vừa click
+                    formToSubmit = button.closest('form.delete-form');
+
+                    // Hiển thị modal xác nhận
+                    deleteConfirmModal.show();
+                });
+            });
+        }
+
+
+        // --- Đính kèm sự kiện ban đầu khi Grid render lần đầu ---
+        // Chạy hàm đính kèm listener ngay sau khi script được thực thi
+        // Điều này xử lý các nút được render khi trang tải lần đầu
+        attachDeleteButtonListeners();
+
+
+        // --- Đính kèm lại sự kiện mỗi khi Grid render lại dữ liệu (ví dụ: phân trang) ---
+        grid.dataBound = function() {
+            // Khi dataBound fire, Grid đã render lại các nút, cần đính kèm lại sự kiện
+            // Không cần gỡ bỏ sự kiện cũ nếu chúng ta dùng Event Delegation hoặc
+            // đảm bảo hàm attachDeleteButtonListeners xử lý việc đính kèm lại (hiện tại nó sẽ đính kèm lại)
+            // Cách đơn giản nhất ở đây là gọi lại hàm:
+            attachDeleteButtonListeners(); 
+        };
+
+
+        // --- Đính kèm sự kiện click cho nút "Xóa" trong Modal ---
+        confirmDeleteButton.addEventListener('click', function() {
+            if (formToSubmit) {
+                // Nếu có form được lưu, tiến hành submit form đó
+                formToSubmit.submit();
+                // Modal sẽ tự đóng hoặc trang sẽ điều hướng sau khi submit
+            }
+            // Không cần ẩn modal ở đây vì submit form sẽ chuyển trang
+        });
+
+        // (Tùy chọn) Reset formToSubmit khi modal bị đóng mà không nhấn nút Xóa
+        deleteConfirmModalElement.addEventListener('hidden.bs.modal', function () {
+             formToSubmit = null;
+        });
+
+    </script>
+
+    <ejs-scripts></ejs-scripts> 
+}
