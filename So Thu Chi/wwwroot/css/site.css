@@ -11,6 +11,11 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+*:not(.fa-solid):not(.e-icons){
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -21,6 +26,90 @@ body {
 
 .e-bigger {
     font-size: x-large;
+}
+
+/* Button */
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.no-a-decoration, no-a-decoration:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Grid */
+.e-grid {
+    border: 0;
+    border-radius: 5px;
+}
+
+.e-grid .e-gridcontent, .e-grid .e-table {
+    background-color: #1a222b;
+    border-radius: 0 0 5px 5px;
+}
+
+.e-grid .e-gridheader {
+    border: 5px;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    background-color: #222b33;
+}
+.e-grid .e-gridheader .e-headercell{
+    font-weight: bold;
+    background-color: #222b33;
+}
+
+/* Paging */
+.e-grid .e-gridpager {
+    background-color: #222b33;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    border-top: none;
+}
+
+.e-grid .e-gridpager .e-pagercontent,
+.e-grid .e-gridpager .e-numericitem,
+.e-grid .e-gridpager .e-pagercommon, 
+.e-grid .e-gridpager .e-icons {
+    color: #fff;
+}
+
+.e-grid .e-gridpager .e-currentitem {
+    color: #fff; 
+    background-color: #333d48; 
+    font-weight: bold;
+    padding: 0 8px; 
+    border-radius: 3px; 
+}
+
+.e-grid .e-gridpager .e-numericitem:not(.e-currentitem):hover {
+    background-color: #333d48; 
+    cursor: pointer;
+}
+
+.e-grid .e-gridpager .e-disabled {
+    opacity: 0.5; 
+    cursor: not-allowed;
+}
+
+.e-grid .e-gridcontent {
+    overflow-y: auto;
+    overflow-x: auto;
+    background-color: #1a222b;
+    border-radius: 0 0 5px 5px;
+    /* Dành cho Firefox */
+    scrollbar-width: none;
+    /* Dành cho Internet Explorer và Edge cũ */
+    -ms-overflow-style: none;
+}
+
+.e-grid .e-gridcontent::-webkit-scrollbar {
+    width: 0;  
+    height: 0; 
+    display: none;
 }
 
 .radio-button-toggle-group .radio-button-input {

@@ -16,5 +16,13 @@ namespace So_Thu_Chi.Models
 
         [Column(TypeName = "nvarchar(10)")]
         public string Type { get; set; } = "Expense"; // "income" or "expense"
+        
+        [NotMapped]
+        public string? TitleWithIcon {
+            get
+            {
+                return this.Icon + " - " + this.Title;
+            }
+        }
     }
 }
