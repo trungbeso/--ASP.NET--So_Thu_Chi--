@@ -4,7 +4,7 @@
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3633"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bJlGmjaVnbgJFtQ66rV8d2f6mX8EeY3hSYmakM2eW9A=\u0022"},{"Name":"Last-Modified","Value":"Sat, 19 Apr 2025 09:35:10 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"4253"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Ac5qkPD257vcHh8\u002BppD5GS6PXDEJlB2bSovWjAmVbAg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 15:33:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/So Thu Chi/favicon-16x16.png">
       <AssetFile>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon-16x16.png))</AssetFile>
