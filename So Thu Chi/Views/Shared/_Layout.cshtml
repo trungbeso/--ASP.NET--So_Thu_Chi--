@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/So_Thu_Chi.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/So_Thu_Chi.styles.css" asp-append-version="true" /> *@
 </head>
 <body class="e-bigger">
     <header>
@@ -72,7 +72,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2.min.js"></script>
-    <ejs-scripts></ejs-scripts>
     @await RenderSectionAsync("Scripts", required: false)
+    <ejs-scripts></ejs-scripts>
 </body>
 </html>

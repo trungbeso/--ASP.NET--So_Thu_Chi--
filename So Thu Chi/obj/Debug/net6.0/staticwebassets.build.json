@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T9VuWWtgvam2z5XfylTPHzB1q/JZpHxLD7dqBkNoo2E=",
+  "Hash": "p1gIdbWUQcRPz9gKYFZ5axgU6iTZXoO2hkqkJUsnXsw=",
   "Source": "So Thu Chi",
   "BasePath": "_content/So Thu Chi",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2x05d514f6",
-      "Integrity": "5gT1oWPmn55pTN+RXcB5m9laEKRCcbfQFOeg/wJ33kY=",
+      "Fingerprint": "od8o90jig0",
+      "Integrity": "bJlGmjaVnbgJFtQ66rV8d2f6mX8EeY3hSYmakM2eW9A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1373,7 +1373,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3497"
+          "Value": "3633"
         },
         {
           "Name": "Content-Type",
@@ -1381,11 +1381,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5gT1oWPmn55pTN+RXcB5m9laEKRCcbfQFOeg/wJ33kY=\""
+          "Value": "\"bJlGmjaVnbgJFtQ66rV8d2f6mX8EeY3hSYmakM2eW9A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 19 Apr 2025 08:51:51 GMT"
+          "Value": "Sat, 19 Apr 2025 09:35:10 GMT"
         }
       ],
       "EndpointProperties": []

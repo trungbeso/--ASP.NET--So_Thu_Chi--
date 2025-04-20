@@ -9,6 +9,7 @@ namespace So_Thu_Chi.Models
         public int CategoryId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
+        [Required(ErrorMessage = "Category Name is required")]
         public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]

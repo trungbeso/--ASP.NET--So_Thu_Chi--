@@ -21,9 +21,9 @@ namespace So_Thu_Chi.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
-              return _context.Categories != null ? 
-                          View(await _context.Categories.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+            return _context.Categories != null
+                ? View(await _context.Categories.ToListAsync())
+                : Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
         }
 
         // GET: Category/AddOrEdit
@@ -43,16 +43,17 @@ namespace So_Thu_Chi.Controllers
             {
                 if (category.CategoryId == 0)
                 {
-                     _context.Add(category);
+                    _context.Add(category);
                 }
                 else
                 {
                     _context.Update(category);
                 }
-               
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(category);
         }
 
@@ -65,12 +66,13 @@ namespace So_Thu_Chi.Controllers
             {
                 return Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
             }
+
             var category = await _context.Categories.FindAsync(id);
             if (category != null)
             {
                 _context.Categories.Remove(category);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
