@@ -1,20 +1,21 @@
-﻿@model IEnumerable<So_Thu_Chi.Models.Category>
+﻿@model IEnumerable<So_Thu_Chi.Models.Transaction>
 
 @{
-    ViewData["PageTitle"] = "Danh Mục";
+    ViewData["PageTitle"] = "Transaction";
     ViewData["PageActionText"] = "+";
-    ViewData["PageActionUrl"] = "/Category/AddOrEdit";
+    ViewData["PageActionUrl"] = "/Transaction/AddOrEdit";
 }
 
 
 <div class="row">
     <div class="col-md-7">
-        <ejs-grid id="categories" dataSource="@Model" gridLines="None" 
+        <ejs-grid id="transactions" dataSource="@Model" gridLines="None" 
                   allowSorting="true" allowPaging="true" created="onGridCreated">
             <e-grid-pageSettings pageSize="7"></e-grid-pageSettings>
             <e-grid-columns>
-                <e-grid-column headerText="Category" field="TitleWithIcon"></e-grid-column>
-                <e-grid-column headerText="Type" template="#typeColumnTemplate" width="150px"></e-grid-column>
+                <e-grid-column headerText="Category" field="CategoryWithIcon"></e-grid-column>
+                <e-grid-column headerText="Date" field="Date" type="date" textAlign="Left" format="MMM-dd-yy" width="110px"></e-grid-column>
+                <e-grid-column headerText="Amount" field="FormattedAmount" textAlign="Right" width="150px"></e-grid-column>
                 <e-grid-column headerText="Actions" template="#actionColumnTemplate" textAlign="Center" width="100px"></e-grid-column>
             </e-grid-columns>
         </ejs-grid>
@@ -22,7 +23,7 @@
     <div class="col-md-5">
         <div class="widget h-100 d-flex justify-content-center align-items-center"
              style="background-color: #212b36">
-            <i class="fa-solid fa-sack-dollar fa-2xl"></i>
+            <i class="fa-solid fa-money-bill-transfer fa-2xl"></i>
         </div>
     </div>
 </div>
@@ -55,10 +56,10 @@
 
 <script id="actionColumnTemplate" type="text/x-template">
     <div class="d-flex flex-row justify-content-start">
-        <a class="btn btm-sm no-a-decoration" href="/Category/AddOrEdit/${CategoryId}">
+        <a class="btn btm-sm no-a-decoration" href="/Transaction/AddOrEdit/${TransactionId}">
             <i class="fa-solid fa-pencil gap-md-2 text-primary"></i>
         </a>
-        <form action="/Category/Delete/${CategoryId}" method="post" class="delete-form"> 
+        <form action="/Transaction/Delete/${TransactionId}" method="post" class="delete-form">
             @Html.AntiForgeryToken()
             <button type="submit" class="p-2 btn btn-sm btn-link no-a-decoration delete-button">
                 <i class="fa-solid fa-trash-can gap-md-2 text-danger"></i>
