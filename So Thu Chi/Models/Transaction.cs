@@ -36,7 +36,7 @@ namespace So_Thu_Chi.Models
         {
             get
             {
-                return ((Category == null || Category.Title == "Expense") ? "- " : "+ ") + Amount.ToString("N0") + "đ";
+                return ((Category == null || Category.Type == "Expense") ? "- " : "+ ") + Amount.ToString("N0") + "đ";
             }
         }
     }
