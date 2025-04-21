@@ -59,10 +59,22 @@
     });
 }
 
-<ejs-sidebar id="sidebar" width="290px">
+<ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px"
+             target=".dock-target" enableGestures="false">
     <e-content-template>
+        
+        <div class="logo-wrapper">
+            <div class="app-logo">
+                <img src="https://png.pngtree.com/element_our/20190528/ourmid/pngtree-orange-wallet-icon-image_1168655.jpg" alt="logo">
+            </div>
+            <div class="w-100">
+                
+            </div>
+            <i id="sidebar-toggler" class="fa-solid "></i>
+        </div>
+        
         <div class="profile-wrapper">
-            <img src="./avatar.webp" class="profile-pic" />
+            <img src="./avatar.webp" alt="avatar" class="profile-pic"/>
             <div class="titles d-flex flex-column ps-3">
                 <h6 class="mb-0">Sổ Thu Chi</h6>
                 <span class="text-muted">Benjamin</span>
