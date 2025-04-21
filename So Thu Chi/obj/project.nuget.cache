@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pgfiDax5rF0=",
+  "dgSpecHash": "WwCXArAXWNw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HLC_2021\\Desktop\\self study\\ExpenseTracker\\Project\\So Thu Chi\\So Thu Chi\\So Thu Chi.csproj",
+  "projectFilePath": "C:\\Users\\HLC_2021\\Desktop\\self study\\ExpenseTracker\\expense_tracker\\So Thu Chi\\So Thu Chi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HLC_2021\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -225,8 +225,8 @@
     "C:\\Users\\HLC_2021\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\HLC_2021\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\HLC_2021\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\HLC_2021\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
   ],

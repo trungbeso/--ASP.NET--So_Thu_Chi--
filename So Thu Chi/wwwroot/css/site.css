@@ -27,9 +27,66 @@ body {
 .e-bigger {
     font-size: x-large;
 }
+
+/* Menu side bar */
+#menu .e-menu-item.e-separator:not(first-child) {
+    margin-top: 35px;
+}
+
+#menu .e-menu-item.e-separator {
+    border: none;
+    margin: 5px 5px;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    font-size: 13px;
+    color: #65da41; 
+    margin-bottom: 5px;
+}
+
+#menu .e-menu-item .e-anchor-wrap span.e-menu-icon {
+    color: rgb(171, 163, 152);
+}
+
+#menu .e-anchor-wrap {
+    display: inline-block;
+}
+
+#menu .e-menu-item a {
+    width: 100%;
+    color: rgb(171, 163, 152);
+    font-weight: 300;
+    padding: 7px 5px;
+    box-sizing: border-box;
+}
+
+    #menu .e-menu-item a:hover{
+        color:#fff;
+    }
+
+    #menu .e-menu-item {
+        box-sizing: border-box;
+    }
+
+    #menu .e-menu-item:not(.e-separator) {
+        height: 50px;
+        border-radius: 4px;
+    }
+
+#menu {
+    width: 100% !important;
+    background-color: inherit;
+    overflow: hidden;
+}
+
 /* Navbar */
 .navbar {
-    background-color: rgba(18,22,29);
+    background-color: #222b33;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+        background-color: transparent !important;
+        transition: background-color 0.3s ease;
 }
 
 .navbar i{
@@ -50,6 +107,21 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(72, 84, 95, 0.12);
+    padding: 16px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.profile-wrapper .title {
+    line-height: 1;
 }
 
 /* Breadcrumb */
@@ -80,7 +152,7 @@ body {
 }
 
 #deleteConfirmModal .btn-close {
-    filter: invert(1); /* Đảo ngược màu để chuyển từ đen sang trắng */
+    filter: invert(1);
 }
 
 
@@ -207,6 +279,11 @@ body {
     border-right: 1px dashed rgba(75, 82, 85, 0.24);
     padding: 10px 20px;
 }
+
+    #sidebar .e-menu-wrapper {
+        width: 100%;
+        background-color: inherit;
+    }
 
 .widget {
     border-radius: 1rem;

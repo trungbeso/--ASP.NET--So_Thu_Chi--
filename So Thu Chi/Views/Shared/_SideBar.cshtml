@@ -1,7 +1,73 @@
 ﻿@{
-    
+    List<Object> menuItems = new List<Object>();
+
+    menuItems.Add(new
+    {
+        text = "General",
+        separator = true
+    });
+
+    menuItems.Add(new
+    {
+        text = "Home",
+        url = "/",
+        iconCss = "fa-solid fa-house"
+    });
+
+    menuItems.Add(new
+    {
+        text = "Chủ Đề",
+        url = "/Category",
+        iconCss = "fa-solid fa-folder-closed",
+        items = new List<Object>()
+        {
+            new { text = "Danh Sách", url = "/Category"},
+            new { text = "Thêm Mới", url = "/Category/AddOrEdit"}
+        }
+    });
+
+    menuItems.Add(new
+    {
+        text = "Giao Dịch",
+        url = "/Transaction",
+        iconCss = "fa-solid fa-arrow-right-arrow-left",
+        items = new List<Object>()
+        {
+            new { text = "Danh Sách", url = "/Transaction"},
+            new { text = "Thêm Mới", url = "/Transaction/AddOrEdit"}
+        }
+    });
+
+    menuItems.Add(new
+    {
+        text = "Tools",
+        separator = true
+    });
+
+    menuItems.Add(new
+    {
+        text = "Báo Cáo",
+        url = "#",
+        iconCss = "fa-solid fa-chart-column"
+    });
+
+    menuItems.Add(new
+    {
+        text = "Cài Đặt",
+        url = "#",
+        iconCss = "fa-solid fa-gear"
+    });
 }
 
 <ejs-sidebar id="sidebar" width="290px">
-    
+    <e-content-template>
+        <div class="profile-wrapper">
+            <img src="./avatar.webp" class="profile-pic" />
+            <div class="titles d-flex flex-column ps-3">
+                <h6 class="mb-0">Sổ Thu Chi</h6>
+                <span class="text-muted">Benjamin</span>
+            </div>
+        </div>
+        <ejs-menu id="menu" items="menuItems" orientation="Vertical" hamburgerMode></ejs-menu>
+    </e-content-template>
 </ejs-sidebar>
