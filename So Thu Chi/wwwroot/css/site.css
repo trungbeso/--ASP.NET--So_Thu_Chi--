@@ -27,7 +27,30 @@ body {
 .e-bigger {
     font-size: x-large;
 }
+/* Navbar */
+.navbar {
+    background-color: rgba(18,22,29);
+}
 
+.navbar i{
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.navbar i:hover, .navbar img:hover {
+    cursor: pointer;
+    background-color: #48545f14;
+    transform: scale(1.05) translateZ(0px);
+}
+
+/* profile pic */
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
 
 /* Breadcrumb */
 .e-breadcrumb a, .e-breadcrumb a:hover {
