@@ -19,18 +19,20 @@
 
 <partial name="_SideBar"/>
 
-<nav class="navbar sticky-top">
-    <div class="container-fluid py-2 px-4">
-        <div class="left-side">
-            <i class="fa-solid fa-magnifying-glass"></i>
+<div class="dock-target">
+    <nav class="navbar sticky-top">
+        <div class="container-fluid py-2 px-4">
+            <div class="left-side">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="right-side">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-message"></i>
+                <img src="./avatar.webp" class="profile-pic"/>
+            </div>
         </div>
-        <div class="right-side">
-            <i class="fa-solid fa-bell"></i>
-            <i class="fa-solid fa-message"></i>
-            <img src="./avatar.webp" class="profile-pic"/>
-        </div>
-    </div>
-</nav>
+    </nav>
+
 
 <div class="main-content">
     <div class="container mt-5">
@@ -69,6 +71,7 @@
             </div>
         </div>
     </div>  
+</div>
 </div>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
