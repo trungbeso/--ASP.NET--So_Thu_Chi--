@@ -1,3 +1,4 @@
+wwwroot\avatar.webp
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\favicon-16x16.png
