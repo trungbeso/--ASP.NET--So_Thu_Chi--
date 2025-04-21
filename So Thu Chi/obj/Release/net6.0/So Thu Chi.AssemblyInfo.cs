@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("So Thu Chi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd125d72ddf35042a6b6088682469628cefeafd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("So Thu Chi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("So Thu Chi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

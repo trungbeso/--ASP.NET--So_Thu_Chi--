@@ -71,7 +71,6 @@ C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Ch
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.So Thu Chi.props
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.So Thu Chi.props
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\So Thu Chi.csproj.Up2Date
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\So Thu Chi.dll
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\refint\So Thu Chi.dll
@@ -582,3 +581,5 @@ D:\FULL-STACK_PROJECT\expense_tracker\expense_tracker\So Thu Chi\obj\Debug\net6.
 D:\FULL-STACK_PROJECT\expense_tracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\So Thu Chi.pdb
 D:\FULL-STACK_PROJECT\expense_tracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\So Thu Chi.genruntimeconfig.cache
 D:\FULL-STACK_PROJECT\expense_tracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\ref\So Thu Chi.dll
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\So Thu Chi.sourcelink.json
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\Project\So Thu Chi\So Thu Chi\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
