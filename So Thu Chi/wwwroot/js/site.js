@@ -16,7 +16,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const dockBar = document.getElementById("sidebar").ej2_instances[0];
-    document.getElementById('sidebar_toggler').onclick = function () {
+    document.getElementById('sidebar-toggler').onclick = function () {
         dockBar.toggle();
     };
 });
