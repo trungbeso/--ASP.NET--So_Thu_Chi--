@@ -12,5 +12,7 @@ namespace So_Thu_Chi.Models
         public DbSet<Transaction> Transactions { get; set; }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<User> Users { get; set; }
     }
 }

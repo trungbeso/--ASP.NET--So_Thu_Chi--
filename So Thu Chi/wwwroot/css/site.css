@@ -82,6 +82,8 @@ body {
 
 .app-logo {
     padding: 10px 10px;
+    width: 60px;
+    height: 60px;
 }
 
 /* Menu side bar */
@@ -130,7 +132,7 @@ body {
 #menu {
     width: 100% !important;
     background-color: inherit;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 /* Navbar */
@@ -336,6 +338,7 @@ body {
     background-color: #1a222b;
     border-right: 1px dashed rgba(75, 82, 85, 0.24);
     padding: 10px 20px;
+    overflow-y: hidden;
 }
 
     #sidebar .e-menu-wrapper {

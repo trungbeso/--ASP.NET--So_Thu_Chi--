@@ -12,7 +12,27 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"))
 
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NNaF5cXmBCekx0QHxbf1x1ZFJMYFxbQXZPMyBoS35Rc0VnWHded3RVQ2BUVUNxVEBU");
 
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "So thu chi Api",
+        Version = "v1",
+        Description = "API Documentation for So thu chi app"
+    });
+});
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "So thu chi Api v1");
+        c.RoutePrefix = "swagger";
+    });
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -32,5 +52,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Dashboard}/{action=Index}/{id?}");
+
+app.MapControllers();
 
 app.Run();

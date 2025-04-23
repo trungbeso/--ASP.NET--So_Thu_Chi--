@@ -876,3 +876,7 @@ C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\o
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\So Thu Chi.pdb
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\So Thu Chi.genruntimeconfig.cache
 C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\obj\Debug\net6.0\ref\So Thu Chi.dll
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HLC_2021\Desktop\self study\ExpenseTracker\expense_tracker\So Thu Chi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
