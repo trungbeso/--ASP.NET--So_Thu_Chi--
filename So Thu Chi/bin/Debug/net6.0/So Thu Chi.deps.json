@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.36",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.18",
           "Swashbuckle.AspNetCore": "6.4.0",
-          "Syncfusion.EJ2.AspNet.Core": "29.1.38"
+          "Syncfusion.EJ2.AspNet.Core": "29.1.38",
+          "System.IdentityModel.Tokens.Jwt": "6.36.0"
         },
         "runtime": {
           "So Thu Chi.dll": {}
