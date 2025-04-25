@@ -16,5 +16,6 @@ namespace So_Thu_Chi.Dtos
         public string Email { get; set; }
 
         public string Address { get; set; }
+        public string Role { get; set; }
     }
 }

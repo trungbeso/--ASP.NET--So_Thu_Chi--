@@ -38,14 +38,25 @@ namespace So_Thu_Chi.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<string>> Login(UserDto request)
+        public async Task<ActionResult<TokenResponseDto>> Login(UserDto request)
         {
-            var token = await authService.LoginAsync(request);
-            if (token == null)
+            var result = await authService.LoginAsync(request);
+            if (result == null)
             {
                 return BadRequest("Invalid username or password.");
             }
-            return Ok(token);
+            return Ok(result);
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<ActionResult<TokenResponseDto>> RefreshToken(RefreshTokenRequestDto req)
+        {
+            var result = await authService.RefreshTokenAsync(req);
+            if (result == null || result.AccessToken is null || result.RefreshToken is null)
+            {
+                return BadRequest("Invalid refresh token.");
+            }
+            return Ok(result);
         }
 
         [HttpGet]
@@ -53,6 +64,13 @@ namespace So_Thu_Chi.Controllers
         public IActionResult AuthenticateOnlyEndpoint()
         {
             return Ok("You are authenticated.");
+        }
+
+        [HttpGet("admin-only")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult AdminOnlyEndpoint()
+        {
+            return Ok("You are Admin.");
         }
     }
 }
